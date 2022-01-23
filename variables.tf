@@ -9,9 +9,8 @@ variable "prefix" {
   description = "This prefix will be included in the name of most resources."
 }
 
-variable "bucket_prefix" {
-  description = "S3 bucket prefix"
-  default = var.prefix
+locals {
+  bucket_prefix = var.prefix
 }
 
 variable "region" {
