@@ -10,8 +10,8 @@ variable "prefix" {
 }
 
 variable "bucket_prefix" {
-  descriptions = "S3 bucket prefix" 
-  default = "${var.prefix}"
+  description = "S3 bucket prefix"
+  default = var.prefix
 }
 
 variable "region" {
